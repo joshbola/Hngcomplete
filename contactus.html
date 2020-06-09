@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Contact Us </title>
 
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" >
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
   <!-- FONT AWESOME CDN LINK -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,8 +20,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/contact.css">
 </head>
+
 <body>
- <!-- HEADER SECTION -->
+  <!-- HEADER SECTION -->
   <header class="header">
     <nav class="header__nav">
       <h4 class="hng-logo">HNG</h4>
@@ -65,9 +66,9 @@
 
     <!-- Address -->
     <div class="info-right">
-      <h1 class=header-title>OUR <span class="bold">ADDRESS</span></h1>
+      <h1 class="header-title">OUR <span class="bold">ADDRESS</span></h1>
       <hr>
-      <h5 class=text>You can find us at:</h5>
+      <h5 class="text">You can find us at:</h5>
       <p class="p bold">
         30b, Owonikoko Street, <br>
         Off Richman Junction,<br>Ikeja Lagos- Nigeria.</span>
@@ -121,28 +122,18 @@
       <small>&copy; Copyright - HNG Hotels | Designed by DamiflexSolution</small>
     </div>
   </footer>
-  
+
   <!-- map script -->
   <script>
     var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644}, zoom: 8
-        });
-      }
-    // function initMap() {
-    //   var location = { lat: 6.595680, lng: 3.337030 };
-    //   var map = new google.maps.Map(document.getElementById("map"), {
-    //     zoom: 4,
-    //     center: location
-    //   });
-    //   var marker = new google.maps.Marker({
-    //     position: location,
-    //     map: map
-    //   });
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 }, zoom: 8
+      });
+    }
   </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH3k7sqj7OqdV_zDynOShg5TQu55_rI-s&callback=initMap"
-      async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH3k7sqj7OqdV_zDynOShg5TQu55_rI-s&callback=initMap"
+    async defer></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/hamburger.js"></script>
 </body>
