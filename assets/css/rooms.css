@@ -11,7 +11,7 @@
          rgba(57, 40, 32, 0.4),
          rgba(57, 40, 32, 0.4)
       ),
-      url(../img/hero.jpg);
+      url(../img/rooms/hero.jpg);
    background-position: top center;
    background-size: cover;
    width: 100%;
@@ -32,7 +32,7 @@
 
 .header__nav {
    position: absolute;
-   top: 25px;
+   top: 35px;
    display: flex;
    z-index: 2;
    font-family: "Montserrat", sans-serif;
@@ -45,12 +45,12 @@
 }
 
 .header__nav h4 {
-   width: 90px;
    display: inline-block;
    margin-right: 10px;
    font-weight: 900;
+   font-size: 24px;
    border: 4px solid #ffffff;
-   padding: 5px;
+   padding: 15px 36.5px;
 }
 
 .header__nav .hamburger {
@@ -77,14 +77,14 @@
 }
 
 .header__nav .header__nav-links li:not(:last-child) {
-   margin-right: 12px;
+   margin-right: 32px;
 }
 
 .header__nav .header__nav-links li a {
    display: inline-block;
    color: white;
    text-decoration: none;
-   font-weight: 500;
+   font-weight: 300;
    font-size: 16px;
 }
 
@@ -169,7 +169,7 @@
          rgba(57, 40, 32, 0.4),
          rgba(57, 40, 32, 0.4)
       ),
-      url(../img/banner.png);
+      url(../img/rooms/house-5148865_1920.jpg);
    background-position: top center;
    background-size: cover;
    width: 100%;
