@@ -16,9 +16,9 @@ body {
     line-height: 24px;
  }
  
- .current {
+.current {
     font-weight: bold;
- }
+}
  
  .btn {
     padding: 26.5px 46px;
@@ -223,6 +223,7 @@ body {
     padding-top: 23px;
  }
  
+ /* CONTACT SECTION */
  .contact-us {
     height: 557px;
     padding-top: 125px;
@@ -275,8 +276,9 @@ body {
     line-height: 49px;
  }
  
- .contact-inner-wrap button {
+ .contact-inner-wrap a {
     margin-top: 59px;
+    cursor: pointer;
  }
  
  /* FOOTER STYLING */

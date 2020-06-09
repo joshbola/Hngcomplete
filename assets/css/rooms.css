@@ -140,6 +140,20 @@
 }
 
 /* UTILITIES STYLING */
+a {
+   text-decoration: none;
+   color: white;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.current {
+   font-weight: bold;
+}
+
 .border-bottom {
    display: inline-block;
    border: 4px solid #cc8655;
@@ -155,56 +169,79 @@
    margin-bottom: 67px !important;
 }
 
-/* BANNER STYLING */
-.banner {
+.btn {
+   padding: 26.5px 46px;
+   background: #cc8644;
+   color: #fefefe;
+   border: none;
+   font-family: Cardo;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 27px;
+   line-height: 150%;
+}
+
+.btn:hover{
+    background: #87490e;
+    color: white;
+}
+
+/* CONTACT SECTION */
+.contact-us {
+   height: 557px;
+   padding-top: 125px;
    display: flex;
    flex-direction: column;
-   position: relative;
-   height: 380px;
-   align-items: center;
-   justify-content: center;
    text-align: center;
-   background-image: linear-gradient(
-         to left,
-         rgba(57, 40, 32, 0.4),
-         rgba(57, 40, 32, 0.4)
-      ),
-      url(../img/rooms/house-5148865_1920.jpg);
-   background-position: top center;
-   background-size: cover;
+   background: rgba(57, 40, 32, 0.42);
+   position: relative;
+}
+
+.contact-us::before {
+   content: "";
+   background: url(../img/facilities/house-5148865_1920.jpg) no-repeat
+      center center/cover;
+   height: 557px;
    width: 100%;
-   padding: 10px;
+   position: absolute;
+   z-index: -1;
+   top: 0;
 }
 
-.banner h2 {
-   font-family: "Montserrat", sans-serif;
+.contact-inner-wrap {
+   color: #fefefe;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact-inner-wrap h2 {
+   font-family: "Montserrat";
+   font-style: normal;
    font-weight: bold;
-   font-size: 2rem;
-   color: #ffffff;
+   font-size: 36px;
+   line-height: 44px;
 }
 
-.banner p {
-   font-family: "Cardo", serif;
+.contact-inner-wrap hr {
+   border: 4px solid #fefefe;
+   border-radius: 15px;
+   width: 70px;
+   margin-top: 42px;
+}
+
+.contact-inner-wrap p {
+   margin-top: 13px;
+   font-family: "Cardo";
    font-style: italic;
    font-weight: normal;
-   font-size: 1.8rem;
-   color: #ffffff;
+   font-size: 36px;
+   line-height: 49px;
 }
 
-.banner button {
-   color: #ffffff;
-   display: inline-block;
-   width: 280px;
-   height: 85px;
-   background: #cc8655;
-   font-family: "Cardo", serif;
-   border: 2px solid #e4975f;
-   font-weight: bold;
-   font-size: 1.7rem;
-}
-
-.banner button:hover {
-   background: #c07f50;
+.contact-inner-wrap a {
+   margin-top: 59px;
+   cursor: pointer;
 }
 
 /* FOOTER STYLING */
