@@ -261,8 +261,7 @@ body {
  }
  
  .contact-inner-wrap hr {
-    border: 4px solid #fefefe;
-    border-radius: 15px;
+    border: 2.5px solid #fefefe;
     width: 70px;
     margin-top: 42px;
  }
@@ -394,7 +393,13 @@ body {
 @media (max-width: 610px) {
    .header {
       padding: 5px;
+      height: 50vh;
    }
+
+   .header h1{
+      font-size: 50px;
+  }
+
 
    .header__nav .hamburger {
       display: inline-block;
@@ -505,7 +510,7 @@ body {
 
  @media (max-width: 540px) {
    .footer {
-      height: 650px;
+      height: 550px;
    }
 
    .footer__social a:not(:last-child) {
@@ -533,5 +538,54 @@ body {
 @media (max-width: 320px) {
    h1 {
       font-size: 3rem !important;
+   }
+}
+
+@media (max-width: 540px) {
+   .contact-inner-wrap {
+      color: #fefefe;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .contact-inner-wrap h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+   }
+   
+   .contact-inner-wrap hr {
+      border: 1.5px solid #fefefe;
+      width: 70px;
+      margin-top: 42px;
+   }
+   
+   .contact-inner-wrap p {
+      margin-top: 13px;
+      font-family: "Cardo";
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+   }
+   
+   .contact-inner-wrap a {
+      margin-top: 25px;
+      cursor: pointer;
+   }
+   
+   .btn{
+      padding: 28px 35px;
+      background: #cc8644;
+      color: #fefefe;
+      border: none;
+      font-family: Cardo;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 44%;
    }
 }
