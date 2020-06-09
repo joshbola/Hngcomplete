@@ -32,7 +32,7 @@
 
 .header__nav {
    position: absolute;
-   top: 35px;
+   top: 25px;
    display: flex;
    z-index: 2;
    font-family: "Montserrat", sans-serif;
@@ -45,12 +45,13 @@
 }
 
 .header__nav h4 {
+   width: 90px;
    display: inline-block;
    margin-right: 10px;
    font-weight: 900;
-   font-size: 24px;
    border: 4px solid #ffffff;
-   padding: 15px 36.5px;
+   padding: 5px;
+   font-size: 24px;
 }
 
 .header__nav .hamburger {
@@ -77,14 +78,14 @@
 }
 
 .header__nav .header__nav-links li:not(:last-child) {
-   margin-right: 32px;
+   margin-right: 12px;
 }
 
 .header__nav .header__nav-links li a {
    display: inline-block;
    color: white;
    text-decoration: none;
-   font-weight: 300;
+   font-weight: 500;
    font-size: 16px;
 }
 
@@ -115,16 +116,15 @@
    font-family: "Montserrat", sans-serif;
    font-size: 2rem;
    color: #cc8644;
-   line-height: 3.2rem;
 }
 
 .gallery__header .light {
-   font-weight: 300;
+   font-weight: 100;
 }
 
 .gallery__header .bold {
    font-weight: bold;
-   margin-top: -12px;
+   margin-top: -10px;
 }
 
 .gallery p {
@@ -141,26 +141,10 @@
 }
 
 /* UTILITIES STYLING */
-a {
-   text-decoration: none;
-   color: white;
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: 300;
-   font-size: 20px;
-   line-height: 24px;
-}
-
-.current {
-   font-weight: bold;
-}
-
 .border-bottom {
    display: inline-block;
-   border: 2.5px solid #cc8655;
+   border: 4px solid #cc8655;
    width: 70px;
-   margin-top: 30px;
-   margin-bottom: 55px;
 }
 
 .mright {
@@ -172,78 +156,77 @@ a {
    margin-bottom: 67px !important;
 }
 
-.btn {
-   padding: 26.5px 46px;
-   background: #cc8644;
-   color: #fefefe;
-   border: none;
-   font-family: Cardo;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 27px;
-   line-height: 150%;
-}
-
-.btn:hover{
-    background: #87490e;
-    color: white;
-}
-
-/* CONTACT SECTION */
-.contact-us {
-   height: 557px;
-   padding-top: 125px;
+/* BANNER STYLING */
+.banner {
    display: flex;
    flex-direction: column;
-   text-align: center;
-   background: rgba(57, 40, 32, 0.42);
    position: relative;
-}
-
-.contact-us::before {
-   content: "";
-   background: url(../img/facilities/house-5148865_1920.jpg) no-repeat
-      center center/cover;
-   height: 557px;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
-   top: 0;
-}
-
-.contact-inner-wrap {
-   color: #fefefe;
-   display: flex;
-   flex-direction: column;
+   height: 400px;
    align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-image: linear-gradient(
+         to left,
+         rgba(57, 40, 32, 0.4),
+         rgba(57, 40, 32, 0.4)
+      ),
+      url(../img/rooms/banner.jpg);
+   background-position: top center;
+   background-size: cover;
+   width: 100%;
+   padding: 10px;
 }
 
-.contact-inner-wrap h2 {
-   font-family: "Montserrat";
-   font-style: normal;
+.banner h2 {
+   font-family: "Montserrat", sans-serif;
    font-weight: bold;
-   font-size: 36px;
-   line-height: 44px;
+   font-size: 2rem;
+   color: #ffffff;
 }
 
-.contact-inner-wrap hr {
-   border: 2.5px solid #fefefe;
-   width: 70px;
-   margin-top: 42px;
-}
-
-.contact-inner-wrap p {
-   margin-top: 13px;
-   font-family: "Cardo";
+.banner p {
+   position: relative;
+   font-family: "Cardo", serif;
    font-style: italic;
    font-weight: normal;
-   font-size: 36px;
-   line-height: 49px;
+   font-size: 1.8rem;
+   z-index: 5;
+   color: #ffffff;
+   width: 450px;
+   height: 75px;
 }
 
-.contact-inner-wrap a {
-   margin-top: 59px;
-   cursor: pointer;
+.banner p::before {
+   content: "";
+   background-color: white;
+   height: 5px;
+   width: 70px;
+   z-index: 6;
+   position: absolute;
+   bottom: 0;
+   left: 45%;
+   transform: translate3d(0%, -50%, 0);
+   -webkit-transform: translate3d(0%, -50%, 0);
+   -moz-transform: translate3d(0%, -50%, 0);
+   -ms-transform: translate3d(0%, -50%, 0);
+   -o-transform: translate3d(0%, -50%, 0);
+}
+
+.banner button {
+   color: #ffffff;
+   display: inline-block;
+   width: 280px;
+   height: 85px;
+   background: #cc8655;
+   font-family: "Cardo", serif;
+   border: 2px solid #e4975f;
+   font-weight: bold;
+   font-size: 1.7rem;
+   margin-top: 50px;
+}
+
+.banner button:hover {
+   background: #c07f50;
 }
 
 /* FOOTER STYLING */
@@ -361,12 +344,7 @@ a {
 @media (max-width: 610px) {
    .header {
       padding: 5px;
-      height: 50vh;
    }
-
-   .header h1{
-      font-size: 50px;
-  }
 
    .header__nav .hamburger {
       display: inline-block;
@@ -412,11 +390,10 @@ a {
 @media (max-width: 540px) {
    .banner button {
       font-size: 24px;
-      width: 90%;
    }
 
    .footer {
-      height: 550px;
+      height: 650px;
    }
 
    .footer__social a:not(:last-child) {
@@ -432,6 +409,13 @@ a {
       text-align: center;
       margin-right: 5px !important;
       margin-bottom: 10px;
+   }
+}
+
+@media (max-width: 501px) {
+   .banner p {
+      width: 90%;
+      height: 110px;
    }
 }
 
@@ -451,60 +435,23 @@ a {
 }
 
 @media (max-width: 320px) {
+   .banner p {
+      height: 150px;
+   }
+
+   .banner p::before {
+      left: 35%;
+   }
+
+   .banner button {
+      width: 90%;
+   }
+
    h1 {
       font-size: 3rem !important;
    }
 
    h2 {
       font-size: 1.8rem !important;
-   }
-}
-
-@media (max-width: 540px) {
-   .contact-inner-wrap {
-      color: #fefefe;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-   
-   .contact-inner-wrap h2 {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
-   }
-   
-   .contact-inner-wrap hr {
-      border: 1.5px solid #fefefe;
-      width: 70px;
-      margin-top: 42px;
-   }
-   
-   .contact-inner-wrap p {
-      margin-top: 13px;
-      font-family: "Cardo";
-      font-style: italic;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 32px;
-   }
-   
-   .contact-inner-wrap a {
-      margin-top: 25px;
-      cursor: pointer;
-   }
-   
-   .btn{
-      padding: 28px 35px;
-      background: #cc8644;
-      color: #fefefe;
-      border: none;
-      font-family: Cardo;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 44%;
    }
 }
