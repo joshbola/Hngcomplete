@@ -126,6 +126,10 @@
    -o-transition: all 0.3s ease;
 }
 
+.active-link {
+   border-bottom: 4px solid white;
+}
+
 /* FEATURED ROOM STYLING */
 .featured-room {
    position: relative;

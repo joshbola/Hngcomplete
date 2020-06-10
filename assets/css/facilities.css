@@ -137,6 +137,10 @@ a {
    -o-transition: all 0.3s ease;
 }
 
+.active-link {
+   border-bottom: 4px solid white;
+}
+
 /* MAIN STYLE FOR FACILITIES PAGE */
 main {
    display: flex;
